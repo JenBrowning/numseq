@@ -10,9 +10,10 @@ def fib(n):
     return fn
 
 def fib_generator():
+    """the first time someone calls this generator it's going to yield a 0"""
     a, b = 0, 1
     while True:
-        yield a #the first time someone calls this generator it's going to yield a 0
+        yield a 
         a, b = b, a + b
 
 
